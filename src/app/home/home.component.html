@@ -1,0 +1,100 @@
+<div fxLayout="direction" style="background-color: aquamarine;">
+  <div fxFlex="33" style="background-color: brown">one</div>
+  <div fxFlex="33%" [fxLayout]="direction" style="background-color: blueviolet;">
+    <div fxFlex="33%">two_one</div>
+    <div fxFlex="33">two two</div>
+    <div fxFlex="33">two three</div>
+  </div>
+  <div fxFlex style="background-color: chartreuse">three</div>
+
+</div>
+
+
+<div fxLayout="row">
+  <div fxFlex="100%" fxFlex.lt-sm="100%" fxFlex.gt-sm="100%">aaaa</div>
+  <div fxFlex="33">bbbb</div>
+  <div fxShow fxHide.xs="false" fxHide.lg="true">cccc</div>
+</div>
+
+
+
+<div fxLayout="row" fxLayoutWrap fxLayoutGap="8px" fxLayoutAlign="center"><div>zzzz</div>
+  <div>xxxx</div>
+  <div>cccccc</div>
+</div>
+
+
+<div fxLayout="row" fxLayoutWrap >
+  <div fxFlex="33%"
+       fxFlex.xs="100%"
+       fxFlex.sm="100%"
+       fxFlex.md="33%"
+       fxFlex.lg="33%"
+       fxFlex.xl="33%"
+       style="background-color: darkorange;">vvv</div>
+  <div fxFlex="33">bbb</div>
+  <div fxFlex="33">nnnn</div>
+</div>
+
+
+<div fxLayout="row" fxLayoutAlign="center">
+  <div
+    fxFlex.xs="100%"
+    fxFlex.sm="600px"
+    fxFlex.md="960px"
+    fxFlex.lg="1280px"
+    fxFlex.xl="1920px"
+    style="background-color: chartreuse;"
+  >sadsd</div>
+</div>
+
+
+<div fxLayout="row" fxLayoutAlign="center">
+  <div
+    fxFlex.xs="100%"
+    fxFlex.sm="600px"
+    fxFlex.md="960px"
+    fxFlex.lg="1280px"
+    fxFlex.xl="1920px"
+    style="background-color: chartreuse;"
+  >
+    <div fxLayout="row" fxLayout.xs="column">
+      <div fxFlex>sdfdsfds</div>
+      <div fxFlex>sdfdsfds</div>
+      <div fxFlex>sdfdsfds</div>
+      <div fxFlex>sdfdsfds</div>
+    </div>
+  </div>
+</div>
+
+
+<div fxLayout="row" fxLayoutAlign="center">
+  <div
+    fxFlex.xs="100%"
+    fxFlex.sm="600px"
+    fxFlex.md="960px"
+    fxFlex.lg="1280px"
+    fxFlex.xl="1920px"
+  >
+    <md-card class="example-card">
+      <md-card-header>
+        <div md-card-avatar class="example-header-image"></div>
+        <md-card-title>Shiba Inu</md-card-title>
+        <md-card-subtitle>Dog Breed</md-card-subtitle>
+      </md-card-header>
+      <img md-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <md-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </md-card-content>
+      <md-card-actions align="end">
+        <button md-button>LIKE</button>
+        <button md-button>SHARE</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+</div>
+
