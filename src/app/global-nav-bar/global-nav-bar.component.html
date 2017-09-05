@@ -2,19 +2,13 @@
 
 
 <md-sidenav-container >
-  <md-sidenav mode="over" [opened]="sideMenuShow">
+  <md-sidenav [mode]="mode" [opened]="sideMenuShow" [ngClass]="{'side-nav-icons-only':sideNavIconsOnly,'side-nav-icons-full':!sideNavIconsOnly }">
     <md-list>
-      <md-list-item> Pepper </md-list-item>
-      <md-list-item> Salt </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
-      <md-list-item> Paprika </md-list-item>
+      <md-list-item *ngFor="let item of sideNavLinks">
+        <md-icon mdListIcon>{{item.icon}}</md-icon>
+        <ng-container *ngIf="!sideNavIconsOnly">{{item.title}}</ng-container>
+      </md-list-item>
+
     </md-list>
   </md-sidenav>
   <div class="my-content">
